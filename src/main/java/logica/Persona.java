@@ -4,19 +4,20 @@
  */
 package logica;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+ 
 /**
  *
  * @author glrd4
  */
 @Entity
-public class Persona {
+public class Persona implements Serializable {
 
     /**
      *
