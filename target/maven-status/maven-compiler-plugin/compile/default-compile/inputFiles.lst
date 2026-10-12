@@ -3,3 +3,7 @@ C:\Users\glrd4\OneDrive\Música\Documentos\NetBeansProjects\sigesdocu\src\main\j
 C:\Users\glrd4\OneDrive\Música\Documentos\NetBeansProjects\sigesdocu\src\main\java\logica\MenuSecundario.java
 C:\Users\glrd4\OneDrive\Música\Documentos\NetBeansProjects\sigesdocu\src\main\java\logica\Persona.java
 C:\Users\glrd4\OneDrive\Música\Documentos\NetBeansProjects\sigesdocu\src\main\java\logica\Utils.java
+C:\Users\glrd4\OneDrive\Música\Documentos\NetBeansProjects\sigesdocu\src\main\java\persistencia\exceptions\IllegalOrphanException.java
+C:\Users\glrd4\OneDrive\Música\Documentos\NetBeansProjects\sigesdocu\src\main\java\persistencia\exceptions\NonexistentEntityException.java
+C:\Users\glrd4\OneDrive\Música\Documentos\NetBeansProjects\sigesdocu\src\main\java\persistencia\exceptions\PreexistingEntityException.java
+C:\Users\glrd4\OneDrive\Música\Documentos\NetBeansProjects\sigesdocu\src\main\java\persistencia\PersonaJpaController.java

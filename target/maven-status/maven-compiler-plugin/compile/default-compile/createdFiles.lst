@@ -1,5 +1,9 @@
-logica\Utils.class
-logica\MenuSecundario.class
 logica\MenuPrincipal.class
 iiconcepcion\sigesdocu\Sigesdocu.class
+logica\Utils.class
+persistencia\PersonaJpaController.class
+logica\MenuSecundario.class
+persistencia\exceptions\NonexistentEntityException.class
+persistencia\exceptions\PreexistingEntityException.class
 logica\Persona.class
+persistencia\exceptions\IllegalOrphanException.class
