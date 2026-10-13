@@ -5,6 +5,7 @@
 package iiconcepcion.sigesdocu;
 
 import logica.MenuPrincipal;
+import persistencia.ControladoraPersistencia;
 
 /**
  *
@@ -13,6 +14,7 @@ import logica.MenuPrincipal;
 public class Sigesdocu {
 
     public static void main(String[] args) {
-        MenuPrincipal.menuPrincipal();
+        ControladoraPersistencia controlPersis = new ControladoraPersistencia();
+        //MenuPrincipal.menuPrincipal();
     }
 }

@@ -15,14 +15,13 @@ import javax.persistence.Persistence;
 public class PersonaJpaController implements Serializable {
 
     private final EntityManagerFactory emf;
-    private String sigesdocuPU;
-
+    
     public PersonaJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
 
     public PersonaJpaController() {
-        emf = Persistence.createEntityManagerFactory(sigesdocuPU);
+        emf = Persistence.createEntityManagerFactory("sigesdocuPU");
     }
     
     

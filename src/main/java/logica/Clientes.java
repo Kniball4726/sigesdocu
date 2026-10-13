@@ -4,19 +4,36 @@
  */
 package logica;
 
+import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
  * @author glrd4
  */
-public class Clientes {
+@Entity
+public class Clientes implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_cliente;
+    @Column
     private String cliente;
+    @Column
     private String cuil;
+    @Column
     private String direccion;
+    @Column
     private String telefono;
+    @Column
     private String email;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date creacion;
 
     public Clientes() {

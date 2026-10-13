@@ -5,14 +5,26 @@
 package logica;
 
 import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
  * @author glrd4
  */
+@Entity
 public class Logistica {
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id_logistica;
+    @Column
     private String logistica;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date creacion;
 
     public Logistica() {

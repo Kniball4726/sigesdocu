@@ -5,12 +5,18 @@
 package logica;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  *
  * @author glrd4
  */
+@Entity
 public class Pedidos {
+    @Id
+    @GeneratedValue(strategy=GenerationValue.)
     private int id_pedido;
     private int nota_pedido;
     private Clientes cliente;
