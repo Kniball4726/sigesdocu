@@ -7,6 +7,8 @@ package logica;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -20,6 +22,8 @@ import javax.persistence.TemporalType;
 @Entity
 public class Usuarios {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private int id_usuario;
     @Column(nullable = false, length = 100)
     private String usuario;
     @Column(nullable = false)
@@ -35,7 +39,8 @@ public class Usuarios {
     public Usuarios() {
     }
 
-    public Usuarios(String usuario, String clave, String email, Roles rol, Date creacion) {
+    public Usuarios(int id_usuario, String usuario, String clave, String email, Roles rol, Date creacion) {
+        this.id_usuario = id_usuario;
         this.usuario = usuario;
         this.clave = clave;
         this.email = email;
@@ -61,6 +66,14 @@ public class Usuarios {
 
     public String getEmail() {
         return email;
+    }
+
+    public int getId_usuario() {
+        return id_usuario;
+    }
+
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
     public void setEmail(String email) {

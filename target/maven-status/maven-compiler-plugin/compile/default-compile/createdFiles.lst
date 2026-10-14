@@ -1,7 +1,6 @@
-logica\MenuPrincipal.class
 iiconcepcion\sigesdocu\Sigesdocu.class
 persistencia\ClientesJpaController.class
-logica\MenuSecundario.class
+igu\MenuSecundario.class
 logica\Persona.class
 logica\Roles.class
 logica\Logistica.class
@@ -9,6 +8,7 @@ logica\Pedidos.class
 logica\DetallePedido.class
 logica\Usuarios.class
 logica\Clientes.class
+igu\MenuPrincipal.class
 logica\Utils.class
 persistencia\PersonaJpaController.class
 persistencia\exceptions\NonexistentEntityException.class

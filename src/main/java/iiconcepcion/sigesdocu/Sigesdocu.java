@@ -4,7 +4,7 @@
 
 package iiconcepcion.sigesdocu;
 
-import logica.MenuPrincipal;
+import igu.MenuPrincipal;
 import persistencia.ControladoraPersistencia;
 
 /**

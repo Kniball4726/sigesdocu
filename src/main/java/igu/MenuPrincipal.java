@@ -1,4 +1,6 @@
-package logica;
+package igu;
+
+import logica.Utils;
 
 /**
  *
