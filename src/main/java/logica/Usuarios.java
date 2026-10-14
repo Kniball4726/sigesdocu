@@ -5,16 +5,31 @@
 package logica;
 
 import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
  * @author glrd4
  */
+@Entity
 public class Usuarios {
+    @Id
+    @Column(nullable = false, length = 100)
     private String usuario;
+    @Column(nullable = false)
     private String clave;
+    @Column
     private String email;
+    @ManyToOne
+    @JoinColumn(name = "id_rol")
     private Roles rol;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date creacion;
 
     public Usuarios() {

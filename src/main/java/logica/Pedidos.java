@@ -5,9 +5,16 @@
 package logica;
 
 import java.util.Date;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
@@ -16,16 +23,29 @@ import javax.persistence.Id;
 @Entity
 public class Pedidos {
     @Id
-    @GeneratedValue(strategy=GenerationValue.)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id_pedido;
+    @Column
     private int nota_pedido;
+
+    @ManyToOne
+    @JoinColumn(name = "id_cliente")
     private Clientes cliente;
+    @Column
     private int bultos;
+    @Column
     private int numero;
+    @ManyToOne
+    @JoinColumn(name = "id_logistica")
     private Logistica logistica;
+    @ManyToOne
+    @JoinColumn(name = "usuario")
     private Usuarios usuario;
+    @Column
     private String nota;
+    @Column
     private Boolean entregado;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date creacion;
 
     public Pedidos() {

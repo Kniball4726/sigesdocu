@@ -5,11 +5,12 @@
 package logica;
 
 import java.util.Date;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -22,9 +23,11 @@ public class DetallePedido {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id_detalle;
-    @Column
+    @ManyToOne
+    @JoinColumn(name = "id_producto")
     private Productos productos;
-    @Column
+    @ManyToOne
+    @JoinColumn(name = "id_pedido")
     private Pedidos pedido;
     @Temporal(TemporalType.TIMESTAMP)
     private Date creacion;

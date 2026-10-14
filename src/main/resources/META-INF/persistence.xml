@@ -4,6 +4,12 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>logica.Persona</class>
     <class>logica.Clientes</class>
+    <class>logica.Productos</class>
+    <class>logica.Pedidos</class>
+    <class>logica.DetallePedido</class>
+    <class>logica.Logistica</class>
+    <class>logica.Usuarios</class>
+    <class>logica.Roles</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pruebasjpa?serverTimeZone=UTC"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
