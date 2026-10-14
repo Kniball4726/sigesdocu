@@ -4,6 +4,10 @@
  */
 package persistencia;
 
+import java.lang.System.Logger;
+import java.util.logging.Level;
+import logica.Clientes;
+
 /**
  *
  * @author glrd4
@@ -14,6 +18,14 @@ public class ControladoraPersistencia {
     DetallePedidoJpaController detaJpa = new DetallePedidoJpaController();
     LogisticaJpaController logJpa = new LogisticaJpaController();
     PersonaJpaController persoJpa = new PersonaJpaController();
+    
+    public void crearCliente(Clientes cli){
+        try{
+            cliJpa.create(cli);
+        }catch (Exception ex){
+            System.out.println("Error: "+ex);
+        }
+    }
     
 }
 

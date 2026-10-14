@@ -7,6 +7,7 @@ package persistencia;
 import java.io.Serializable;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import logica.Clientes;
 
 /**
  *
@@ -14,14 +15,16 @@ import javax.persistence.Persistence;
  */
 public class ClientesJpaController implements Serializable {
 
-    private final EntityManagerFactory emf;
        
     public ClientesJpaController(EntityManagerFactory emf){
-        this.emf = emf;
     }
     
     public ClientesJpaController(){
-        emf = Persistence.createEntityManagerFactory("sigesdocuPU");
+        Persistence.createEntityManagerFactory("sigesdocuPU");
+    }
+
+    void create(Clientes cli) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     
